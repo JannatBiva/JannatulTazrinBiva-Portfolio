@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Biva — Portfolio</title>
+  <meta name="description"
+    content="Neo‑card, sidebar‑split portfolio of Jannatul Tazrin Biva — Front‑End Software Engineer (Next.js, TypeScript, React, Tailwind)." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+
+  <canvas id="stars" class="fixed inset-0 -z-10"></canvas>
+
+
+  <div class="lg:grid lg:grid-cols-[290px_1fr]">
+    
+    <aside id="sidebar"
+      class="lg:sticky lg:top-0 h-[100svh] p-6 lg:p-8 flex lg:flex-col items-center lg:items-start gap-6 border-r border-white/10 bg-black/20 backdrop-blur">
+      <a href="#home" class="text-2xl font-extrabold tracking-tight"><span class="grad-text">JTB</span><span
+          class="text-white/60">.dev</span></a>
+      <div class="mt-2 hidden lg:block text-white/60 text-sm">Front‑End • Next.js • TypeScript</div>
+      <nav class="mt-3 lg:mt-6 flex lg:flex-col gap-4 text-sm">
+        <a href="#about" class="flex items-center gap-3 text-white/70 hover:text-white"><span class="dot"></span>
+          About</a>
+        <a href="#exp" class="flex items-center gap-3 text-white/70 hover:text-white"><span class="dot"></span>
+          Experience</a>
+        <a href="#work" class="flex items-center gap-3 text-white/70 hover:text-white"><span class="dot"></span>
+          Projects</a>
+        <a href="#skills" class="flex items-center gap-3 text-white/70 hover:text-white"><span class="dot"></span>
+          Skills</a>
+        <a href="#edu" class="flex items-center gap-3 text-white/70 hover:text-white"><span class="dot"></span>
+          Education</a>
+        <a href="#contact" class="flex items-center gap-3 text-white/70 hover:text-white"><span class="dot"></span>
+          Contact</a>
+      </nav>
+      <div class="mt-auto hidden lg:flex flex-col gap-3">
+        <a href="https://github.com/JannatBiva" target="_blank"
+          class="btn btn-outline text-white/80 hover:text-white">GitHub ↗</a>
+        <a href="./public/docs/CV-Jannatul Tazrin Biva..pdf" class="btn btn-grad ring-grad">Download CV</a>
+      </div>
+    </aside>
+
+    
+    <main class="min-h-screen">
+ 
+      <section id="home" class="px-6 lg:px-12 pt-12 pb-10">
+        <div class="neo rounded-3xl p-8 lg:p-12 grid lg:grid-cols-2 gap-8 items-center">
+          <div class="reveal">
+            <p class="uppercase tracking-[.25em] text-xs text-white/60">Hello, I’m</p>
+            <h1 class="mt-2 text-4xl lg:text-6xl font-extrabold leading-tight">Jannatul Tazrin <span
+                class="grad-text">Biva</span></h1>
+            <p class="mt-4 text-white/80 text-lg">Front‑End Software Engineer crafting fast, accessible, dark‑mode‑first
+              interfaces with React, Next.js, and TypeScript.</p>
+            <div class="mt-7 flex flex-wrap gap-3">
+              <a href="#work" class="btn btn-grad ring-grad">See Projects</a>
+              <a href="#contact" class="btn btn-outline">Contact</a>
+            </div>
+            <div class="mt-5 text-white/70 text-sm">📍 Turku, Finland · 📧 jannatultazrin01@gmail.com</div>
+          </div>
+          <div class="reveal">
+           
+            <div class="grid gap-4">
+              <div class="glass rounded-2xl p-5 card">
+                <div class="text-sm text-white/60">Latest</div>
+                <div class="mt-1 text-xl font-semibold">Static Page Development</div>
+                <p class="text-white/70 mt-1">Internship project with Next.js + TS + Tailwind, Redux cart & localStorage
+                  persist.</p>
+              </div>
+              <div class="glass rounded-2xl p-5 card">
+                <div class="text-sm text-white/60">Research</div>
+                <div class="mt-1 text-xl font-semibold">AI in Usability Testing</div>
+                <p class="text-white/70 mt-1">LLM‑assisted heuristic evaluation for web UI (thesis).</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="px-6 lg:px-12 py-10">
+        <div class="grid lg:grid-cols-3 gap-8 items-start">
+          <h2 class="text-2xl font-bold u">About</h2>
+          <div class="lg:col-span-2 reveal text-white/80">
+            I’m a Front‑End Software Engineer focused on modern web stacks — React, Next.js, TypeScript, Tailwind —
+            shipping features, integrating APIs, and polishing UX. I enjoy turning complex requirements into elegant UIs
+            that perform beautifully.
+          </div>
+        </div>
+      </section>
+
+
+      <section id="exp" class="px-6 lg:px-12 py-6">
+        <h2 class="text-2xl font-bold u mb-6">Experience</h2>
+        <div class="grid lg:grid-cols-2 gap-6">
+          <article class="glass rounded-2xl p-6 reveal card">
+            <div class="flex items-center justify-between">
+              <h3 class="font-semibold text-lg">Front‑End Software Engineer — CEO LYFE LLC</h3><span
+                class="text-xs text-white/60">May 2020 – Present</span>
+            </div>
+            <p class="text-white/75 mt-2">React/Next.js/TS development, API integration, deployments (Vercel & AWS),
+              cross‑functional UI delivery.</p>
+          </article>
+          <article class="glass rounded-2xl p-6 reveal card">
+            <div class="flex items-center justify-between">
+              <h3 class="font-semibold text-lg">Front‑End Developer — Wetopian Global</h3><span
+                class="text-xs text-white/60">Jan 2025 – Present</span>
+            </div>
+            <p class="text-white/75 mt-2">Responsive interfaces in Next.js + Tailwind + TypeScript, debugging and API
+              feature work.</p>
+          </article>
+          <article class="glass rounded-2xl p-6 reveal card">
+            <div class="flex items-center justify-between">
+              <h3 class="font-semibold text-lg">Web Dev / Social Media — IELTS TODAY</h3><span
+                class="text-xs text-white/60">Oct 2019 – Dec 2024</span>
+            </div>
+            <p class="text-white/75 mt-2">Content design with Canva, ad campaigns, and YouTube video editing to grow the
+              brand.</p>
+          </article>
+          <article class="glass rounded-2xl p-6 reveal card">
+            <div class="flex items-center justify-between">
+              <h3 class="font-semibold text-lg">Web Designer & Developer — United English World</h3><span
+                class="text-xs text-white/60">2018 – 2019</span>
+            </div>
+            <p class="text-white/75 mt-2">Responsive websites with HTML/CSS/JS & WordPress, SEO tooling, and accessible
+              design.</p>
+          </article>
+        </div>
+      </section>
+
+
+      <section id="work" class="px-6 lg:px-12 py-8">
+        <h2 class="text-2xl font-bold u mb-6">Projects</h2>
+    
+        <div id="projectsDynamic" class="grid md:grid-cols-2 xl:grid-cols-3 gap-6"></div>
+
+        <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
+          <div class="neo rounded-2xl p-6 reveal card">
+            <div class="text-sm text-white/60">Next.js • Tailwind • Redux</div>
+            <h3 class="mt-1 font-semibold">Static Page Development</h3>
+            <p class="text-white/70 mt-2">Cart UI, typed state, localStorage persist.</p>
+          </div>
+          <div class="neo rounded-2xl p-6 reveal card">
+            <div class="text-sm text-white/60">Thesis • AI • Heuristics</div>
+            <h3 class="mt-1 font-semibold">AI in Usability Testing</h3>
+            <p class="text-white/70 mt-2">Exploring LLMs as co‑evaluators for UX.</p>
+          </div>
+          <div class="neo rounded-2xl p-6 reveal card">
+            <div class="text-sm text-white/60">Next.js • TypeScript • A11y</div>
+            <h3 class="mt-1 font-semibold">Wetopian Global</h3>
+            <p class="text-white/70 mt-2">Accessible UI with API integrations.</p>
+          </div>
+          <div class="neo rounded-2xl p-6 reveal card">
+            <div class="text-sm text-white/60">React Native • Expo</div>
+            <h3 class="mt-1 font-semibold">DoneWithIt App</h3>
+            <p class="text-white/70 mt-2">Second‑hand marketplace prototype.</p>
+          </div>
+          <div class="neo rounded-2xl p-6 reveal card">
+            <div class="text-sm text-white/60">Three.js</div>
+            <h3 class="mt-1 font-semibold">3D Shape View</h3>
+            <p class="text-white/70 mt-2">Interactive 3D object viewer.</p>
+          </div>
+          <div class="neo rounded-2xl p-6 reveal card">
+            <div class="text-sm text-white/60">Unity</div>
+            <h3 class="mt-1 font-semibold">Learn with Fun (AR)</h3>
+            <p class="text-white/70 mt-2">Kids AR mobile app.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="px-6 lg:px-12 py-10">
+        <h2 class="text-2xl font-bold u mb-6">Skills</h2>
+        <div class="grid md:grid-cols-3 gap-20 items-start">
+          <div class="reveal flex gap-4">
+            <div class="ring" style="--p:90"><span>JS/TS</span></div>
+            <div class="ring" style="--p:88"><span>React</span></div>
+            <div class="ring" style="--p:85"><span>Next.js</span></div>
+          </div>
+          <div class="reveal md:col-span-2">
+            <div class="glass rounded-2xl p-5 text-sm">
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 rounded-full border border-white/15">Tailwind</span>
+                <span class="px-3 py-1 rounded-full border border-white/15">Redux Toolkit</span>
+                <span class="px-3 py-1 rounded-full border border-white/15">Node.js</span>
+                <span class="px-3 py-1 rounded-full border border-white/15">REST APIs</span>
+                <span class="px-3 py-1 rounded-full border border-white/15">Selenium</span>
+                <span class="px-3 py-1 rounded-full border border-white/15">Cucumber</span>
+                <span class="px-3 py-1 rounded-full border border-white/15">WordPress</span>
+                <span class="px-3 py-1 rounded-full border border-white/15">Figma</span>
+                <span class="px-3 py-1 rounded-full border border-white/15">Canva</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section id="edu" class="px-6 lg:px-12 py-8">
+        <h2 class="text-2xl font-bold u mb-6">Education</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="neo rounded-2xl p-6 reveal">
+            <h3 class="font-semibold">MSc (Tech) — Software Engineering</h3>
+            <p class="text-white/70">University of Turku • 2022–2025</p>
+            <p class="text-white/60 text-sm">CGPA 3.61/5.00</p>
+          </div>
+          <div class="neo rounded-2xl p-6 reveal">
+            <h3 class="font-semibold">MSc — Engineering Design</h3>
+            <p class="text-white/70">UiT The Arctic University of Norway • 2021–2022 (55/120 cr)</p>
+          </div>
+          <div class="neo rounded-2xl p-6 reveal">
+            <h3 class="font-semibold">BSc — EEE</h3>
+            <p class="text-white/70">BRAC University • 2014–2018</p>
+            <p class="text-white/60 text-sm">CGPA 3.22/4.00</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="px-6 lg:px-12 py-14">
+        <div class="grid lg:grid-cols-2 gap-8">
+          <div class="reveal">
+            <h2 class="text-2xl font-bold u">Get in touch</h2>
+            <p class="text-white/75 mt-2">Open to frontend roles, UI engineering, and EdTech/AI‑adjacent projects.</p>
+            <div class="mt-6 grid gap-3">
+              <div class="glass rounded-xl p-4 flex items-center justify-between">
+                <div class="flex items-center gap-3 text-white/80">📧 jannatultazrin01@gmail.com</div>
+                <button class="px-3 py-1 rounded-lg border border-white/15" data-copy="jannatultazrin01@gmail.com"
+                  data-label="Copy">Copy</button>
+              </div>
+              <div class="glass rounded-xl p-4 flex items-center justify-between">
+                <div class="flex items-center gap-3 text-white/80">📞 +358 469083999</div>
+                <button class="px-3 py-1 rounded-lg border border-white/15" data-copy="+358469083999"
+                  data-label="Copy">Copy</button>
+              </div>
+              <a class="glass rounded-xl p-4 flex items-center justify-between hover:bg-white/10"
+                href="https://github.com/JannatBiva" target="_blank" rel="noreferrer">
+                <div class="flex items-center gap-3 text-white/80">🐙 github.com/JannatBiva</div>
+                <span>↗</span>
+              </a>
+            </div>
+          </div>
+          <form class="neo rounded-2xl p-6 grid gap-4 reveal" id="contactForm"
+            action="https://formspree.io/f/mnnglwrj" method="POST">
+            <div>
+              <label class="text-sm text-white/70">Your name</label>
+              <input name="name" required
+                class="w-full mt-1 bg-white/5 border border-white/10 rounded-xl px-4 py-3 outline-none focus:ring-2 focus:ring-fuchsia-500"
+                placeholder="Name" />
+            </div>
+            <div>
+              <label class="text-sm text-white/70">Your email</label>
+              <input name="email" type="email" required
+                class="w-full mt-1 bg-white/5 border border-white/10 rounded-xl px-4 py-3 outline-none focus:ring-2 focus:ring-fuchsia-500"
+                placeholder="email@example.com" />
+            </div>
+            <div>
+              <label class="text-sm text-white/70">Message</label>
+              <textarea name="message" required
+                class="w-full mt-1 bg-white/5 border border-white/10 rounded-xl px-4 py-3 h-32 outline-none focus:ring-2 focus:ring-fuchsia-500"
+                placeholder="Hello! I'd like to collaborate on..."></textarea>
+            </div>
+            <button class="btn btn-grad">Send</button>
+            <p id="contactStatus" class="text-xs text-white/50"></p>
+          </form>
+
+        </div>
+        <footer class="text-center text-white/60 pt-10 pb-6">© <span id="y"></span> Jannatul Tazrin Biva • Portfolio
+        </footer>
+      </section>
+    </main>
+  </div>
+
+  <script src="./js/main.js">
+ 
+  (async function loadRepos(){
+    const box = document.getElementById('projectsDynamic');
+    if(!box) return;
+
+    try {
+      const res = await fetch('https://api.github.com/users/JannatBiva/repos?sort=updated&per_page=6');
+      if(!res.ok) throw new Error('GitHub API error');
+      const repos = await res.json();
+
+      box.innerHTML = repos.map(r => `
+        <div class="neo rounded-2xl p-6 reveal card">
+          <div class="text-sm text-white/60">${r.language || 'Repo'}</div>
+          <h3 class="mt-1 font-semibold">${r.name}</h3>
+          <p class="text-white/70 mt-2">${(r.description || 'No description').slice(0,140)}</p>
+          <div class="mt-4 text-sm text-white/60">★ ${r.stargazers_count} • Updated ${new Date(r.updated_at).toLocaleDateString()}</div>
+          <a class="mt-4 inline-block btn btn-outline" href="${r.html_url}" target="_blank" rel="noreferrer">View Repo ↗</a>
+        </div>
+      `).join('');
+      box.querySelectorAll('.reveal').forEach(n => n.classList.add('show'));
+    } catch (e) {
+      console.error(e);
+    }
+  })();
+
+
+  </script>
+
+</body>
+
+</html>
